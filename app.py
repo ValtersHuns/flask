@@ -2,6 +2,10 @@ from flask import Flask, json, jsonify, render_template, url_for, request, redir
 
 import chats
 
+
+app = Flask('app')
+
+
 @app.route('/')
 def home():
   return render_template('home.html')
