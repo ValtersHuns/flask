@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block title %}
+<title>Par lapu</title>
+{% endblock %}
+
+{% block valoda %}
+ <a href="{{ url_for('contacteng') }}" style="text-align: right; color: white; font-size: small;" class="nav-item nav-link">ENG</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="about-section">
+  <h1>Mūsu Komanda</h1>
+  <p>Mēs esam Zentas Mauriņas Grobiņas novada vidusskolas studenti.</p>
+  <p>Šī mājaslapa ir radīta, lai spētu veidot savus projektus vienotā datnē.</p>
+</div>
+<br>
+<div class="row d-block w-100 ml-1">
+
+  <div class="column">
+    <div class="card">
+      <img class="mx-auto" src="https://i.imgur.com/ufCQoj3.jpg" alt="Roberts" style="width:60%">
+      <div class="container">
+        <h2>Roberts Trumars</h2>
+        <p class="title">Administrātors</p>
+        <p>Es salauzu roku, braucu ar Passat</p>
+        <p>roberts.trumars@grobinasskola.lv</p>
+        <p><button class="button">Rakstīt!</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img class="mx-auto" src="https://i.imgur.com/E15SHO6.jpg" alt="Valters" style="float:center;width:70%">
+      <div class="container">
+        <h2>Valters Hūns</h2>
+        <p class="title">Īpašnieks & Administrātors</p>
+        <p>Es kačā būdu 3 reiz nedelja</p>
+        <p>valters.huns@grobinasskola.lv</p>
+        <p><button class="button">Rakstīt!</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img class="mx-auto" src="https://i.imgur.com/CXz1Soi.jpg" alt="Pifa" style="width:83%">
+      <div class="container">
+        <h2>Pifiņa</h2>
+        <p class="title">Talismans</p>
+        <p class="title"> </p>
+        <p>Mūsu komandas veiksmes talismans</p>
+        
+        <p>Glaudieni: <a id="clicks">0</a></p>
+        <p class="title">  
+          <button class="button" type="button" onClick="clickME()">Paglaudīt!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

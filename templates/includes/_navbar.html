@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark w-100 p-3">
+  <a class="navbar-brand" href="{{ url_for('home') }}">
+    <img src="https://i.imgur.com/RXSeaYA.jpg" width="50" height="50" class="d-inline-block align-left" alt="">
+  </a> 
+
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+      
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav">
+        <div class="dropdown show">
+          <a style="font-size: 17px;" class="nav-item nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Bioloģijas darbs ▼
+          </a>
+        
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="{{ url_for('lapa') }}">Rezultāti</a>
+            <a class="dropdown-item" href="{{ url_for('results') }}">Attēli</a>
+          </div>
+        </div>
+          <a href="{{ url_for('contact') }}" style="font-size: 17px" class="nav-item nav-link ">Kontakti</a>
+          <a href="{{ url_for('index_lapa') }}" style="font-size: 17px" class="nav-item nav-link">Čats</a>
+          <a href="{{ url_for('posts') }}" style="font-size: 17px" class="nav-item nav-link">Raksti</a>
+
+
+      </div>
+          
+    </div> 
+</nav>
